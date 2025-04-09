@@ -84,20 +84,45 @@ class Bill
 	public void calBill(Customer c,Product...p)
 	 {
         System.out.println("========= CUSTOMER BILL =========");
-        System.out.println("Customer ID   : " + c.getId());
-        System.out.println("Customer Name : " + c.getName());
-        System.out.println("Mobile No.    : " + c.getMobile());
-        
+        System.out.println("ID: " + c.getId());
+        System.out.println("Name: " + c.getName());
+        System.out.println("Quantity: "+ c.getQty());
+        System.out.println("Rate:"+c.getrate());
+        System.out.println("Total:"+c.getTotal());
+        System.out.println("-------------------------------------");
+        System.out.println("Complete:");
+        tottal+=total;
         
 	 }
 }
 
 public class BillingApplication
 {
-
 	public static void main(String[] args) 
 	{
+			
 		Scanner xyz=new Scanner(System.in);
 		Customer c=new Customer();
+		
+		System.out.println("Enter Customer ID:");
+		int id=xyz.nextInt();
+		xyz.nextLine();
+		
+		System.out.println("Enter customer Name:");
+		String name=xyz.nextInt();
+		xyz.nextInt();
+		
+		System.out.println("Enter Quantity:");
+		int quantity=xyz.nextInt();
+		xyz.nextLine();
+		
+		System.out.println("Enter Rate:");
+		int rate=xyz.nextInt();
+		xyz.nextLine();
+		
+	
+		Customer c=new Customer();
+		c.calbill=total;
+		
 	}
 }
