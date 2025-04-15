@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package AprilTest.org;
 import java.util.*;
 class Customer
@@ -32,41 +31,6 @@ class Customer
 		this.mobile = mobile;
 	}
 
-=======
-package OOP;
-import java.util.*;
-class Customer
-{
-		private int id;
-		private String name;
-		private long mobile;
-		
-		public int getId() 
-		{
-			return id;
-		}
-		public void setId(int id) 
-		{
-			this.id = id;
-		}
-		public String getName() 
-		{
-			return name;
-		}
-		public void setName(String name) 
-		{
-			this.name = name;
-		}
-		public long getMobile()
-		{
-			return mobile;
-		}
-		public void setMobile(int mobile) 
-		{
-			this.mobile = mobile;
-		}
-		
->>>>>>> 4649e139504777652fbc5a84fdf7151a41b1f29c
 }
 class Product
 {
@@ -76,11 +40,7 @@ class Product
 	private int qty;
 	private int rate;
 	
-<<<<<<< HEAD
 	public int getId() 
-=======
-	public int getId()
->>>>>>> 4649e139504777652fbc5a84fdf7151a41b1f29c
 	{
 		return id;
 	}
@@ -88,7 +48,6 @@ class Product
 	{
 		this.id = id;
 	}
-<<<<<<< HEAD
 	public String getName()
 	{
 		return name;
@@ -99,27 +58,13 @@ class Product
 	}
 	public int getPrice() 
 	{
-=======
-	public String getName() 
-	{
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getPrice() {
->>>>>>> 4649e139504777652fbc5a84fdf7151a41b1f29c
 		return price;
 	}
 	public void setPrice(int price)
 	{
 		this.price = price;
 	}
-<<<<<<< HEAD
 	public int getQty() 
-=======
-	public int getQty()
->>>>>>> 4649e139504777652fbc5a84fdf7151a41b1f29c
 	{
 		return qty;
 	}
@@ -135,7 +80,6 @@ class Product
 	{
 		this.rate = rate;
 	}
-<<<<<<< HEAD
 	
 
 }
@@ -152,7 +96,7 @@ class Bill
 			int total=0,q,rate;
 			System.out.println("Customer Details");
 			System.out.println("_____________________________________________");
-			
+	
 			System.out.println("Customer id:"+c.getId());
 			System.out.println("Customer name:"+c.getName());
 			System.out.println("Customer mobile: "+c.getMobile());
@@ -216,53 +160,5 @@ public class BillingApplication
 		}
 		Bill b=new Bill();
 		b.calBill(c,p);
-=======
-}
-class Bill
-{
-	public void calBill(Customer c,Product...p)
-	 {
-        System.out.println("========= CUSTOMER BILL =========");
-        System.out.println("ID: " + c.getId());
-        System.out.println("Name: " + c.getName());
-        System.out.println("Quantity: "+ c.getQty());
-        System.out.println("Rate:"+c.getrate());
-        System.out.println("Total:"+c.getTotal());
-        System.out.println("-------------------------------------");
-        System.out.println("Complete:");
-        tottal+=total;
-        
-	 }
-}
-
-public class BillingApplication
-{
-	public static void main(String[] args) 
-	{
-			
-		Scanner xyz=new Scanner(System.in);
-		Customer c=new Customer();
-		
-		System.out.println("Enter Customer ID:");
-		int id=xyz.nextInt();
-		xyz.nextLine();
-		
-		System.out.println("Enter customer Name:");
-		String name=xyz.nextInt();
-		xyz.nextInt();
-		
-		System.out.println("Enter Quantity:");
-		int quantity=xyz.nextInt();
-		xyz.nextLine();
-		
-		System.out.println("Enter Rate:");
-		int rate=xyz.nextInt();
-		xyz.nextLine();
-		
-	
-		Customer c=new Customer();
-		c.calbill=total;
-		
->>>>>>> 4649e139504777652fbc5a84fdf7151a41b1f29c
 	}
 }
