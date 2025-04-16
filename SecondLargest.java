@@ -13,7 +13,7 @@ public class SecondLargest
 		{
 			a[i]=xyz.nextInt();
 		}
-		int secondlarge =0;
+		int secondlarge=0;
 		int large =0;
 		for(int i=0;i<size;i++)
 		{
